@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            opacity: 0.7;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #34495e;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section styling */
+        section {
+            padding: 60px 20px;
+            margin-top: 80px; /* to account for fixed nav */
+        }
+
+        /* About section */
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            color: #2d3436;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            font-size: 1.8em;
+            color: #2d3436;
+            margin: 15px 0;
+        }
+
+        .project p {
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+
+        .project a {
+            text-decoration: none;
+            font-size: 1.1em;
+            color: #1abc9c;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #16a085;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #1abc9c;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul li a {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .about h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Mes Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mon Portfolio</h1>
+        <p>Développeur Full Stack | Expert en React, Node.js, et Plus</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <img src="https://via.placeholder.com/150" alt="Photo Profil">
+        <h2>À propos de moi</h2>
+        <p>
+            Bonjour ! Je suis un développeur full-stack passionné avec plus de 8 ans d'expérience. Mon expertise couvre une variété de technologies, allant de JavaScript, React, Node.js, à la gestion de bases de données complexes. Je suis déterminé à offrir des solutions innovantes pour résoudre des problèmes techniques tout en maintenant une expérience utilisateur fluide et intuitive.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 style="text-align:center; font-size: 2.5em; color: #2d3436;">Mes Projets</h2>
+        <div class="projects">
+            <!-- Projet 1 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 1">
+                <h3>Application de Gestion de Projets</h3>
+                <p>Un outil complet de gestion de projets avec une interface intuitive, développé avec React et Firebase.</p>
+                <a href="https://lienversmonprojet1.com" target="_blank">Voir le projet</a>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 2">
+                <h3>Plateforme de E-commerce</h3>
+                <p>Développée avec Node.js, MongoDB et Express, cette plateforme permet une gestion efficace des ventes en ligne.</p>
+                <a href="https://lienversmonprojet2.com" target="_blank">Voir le projet</a>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 3">
+                <h3>Application Mobile</h3>
+                <p>Une application mobile développée avec React Native pour une gestion simplifiée de finances personnelles.</p>
+                <a href="https://lienversmonprojet3.com" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contactez-moi à <a href="mailto:monemail@example.com">monemail@example.com</a></p>
+    </footer>
+
+</body>
+</html>
