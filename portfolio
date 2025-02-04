@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb; /* Background color */
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Section styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+        }
+
+        /* About section */
+        .about {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Project section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            text-decoration: none;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #3498db;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Développeur Web | Créateur | Passionné de Technologie</p>
+    </header>
+
+    <!-- À propos de moi -->
+    <section class="about">
+        <img src="https://via.placeholder.com/150" alt="Ma photo">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur web passionné par la création de sites et d'applications web modernes. Mon objectif est de toujours améliorer mes compétences et de contribuer à des projets passionnants.</p>
+    </section>
+
+    <!-- Mes projets -->
+    <section>
+        <h2 style="text-align:center;">Mes Projets</h2>
+        <div class="projects">
+            <!-- Projet 1 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 1">
+                <h3>Projet 1</h3>
+                <p>Une application de gestion de tâches construite avec React et Node.js.</p>
+                <a href="https://lienversmonprojet1.com" target="_blank">Voir le projet</a>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 2">
+                <h3>Projet 2</h3>
+                <p>Un portfolio dynamique développé avec HTML, CSS et JavaScript.</p>
+                <a href="https://lienversmonprojet2.com" target="_blank">Voir le projet</a>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 3">
+                <h3>Projet 3</h3>
+                <p>Une plateforme de e-commerce construite avec Vue.js et Firebase.</p>
+                <a href="https://lienversmonprojet3.com" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contactez-moi par email à <a href="mailto:monemail@example.com">monemail@example.com</a></p>
+    </footer>
+
+</body>
+</html>
